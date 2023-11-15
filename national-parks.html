@@ -39,15 +39,18 @@
 
             <label for="searchByType">By Type</label>
             <input type="radio" name="searchType" id="searchByType" />
+            
+            <label for="searchByType">Show All</label>
+            <input type="radio" name="searchType" id="showAll" />
          </form>
 
          <form>
             <select name="parkSearchOptionsList" id="parkSearchOptions">
-               <option>~Select One~</option>
+               <option></option>
             </select>
          </form>
 
-         <div id="cardContainer">
+         <div id="cardContainer" class="d-flex flex-wrap justify-content-center gap-1">
 
          </div>
       </main>
