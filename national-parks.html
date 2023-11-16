@@ -16,43 +16,33 @@
    </head>
    <body>
       <header class="border-bottom border-2 border-black">
-         <a class="ms-3 bg-dark rounded text-decoration-none text-white right-border" href="index.html"
-            >Experience Earth</a
-         >
-         <a class="ms-3 bg-dark rounded text-decoration-none text-white right-border" href="national-parks.html"
-            >Park Search</a
-         >
-         <a class="ms-3 bg-dark rounded text-decoration-none text-white right-border" href="mountains.html"
-            >Mountain Info</a
-         >
+         <a href="index.html" class="headerLink">Experience Earth</a>
+         <a href="national-parks.html" class="headerLink">Park Search</a>
+         <a href="mountains.html" class="headerLink">Mountain Info</a>
 
-         <a class="me-3 bg-dark rounded text-decoration-none text-white right-border float-end" href="index.html"
-            >Sign In</a
-         >
+         <a class="me-3 float-end loginLink" href="index.html">Sign In</a>
       </header>
-
       <main>
          <form>
             <h5>How would you like to sort the park lists?</h5>
-            <label for="searchByLocation">By Location</label>
-            <input type="radio" name="searchType" id="searchByLocation" />
 
-            <label for="searchByType">By Type</label>
-            <input type="radio" name="searchType" id="searchByType" />
+            <input type="radio" name="searchType" id="searchByLocation"/>
+            <label for="searchByLocation">By Location</label>
             
-            <label for="searchByType">Show All</label>
+            <input type="radio" name="searchType" id="searchByType" />
+            <label for="searchByType">By Type</label>
+            
             <input type="radio" name="searchType" id="showAll" />
+            <label for="searchByType">Show All</label>
          </form>
 
          <form>
-            <select name="parkSearchOptionsList" id="parkSearchOptions">
+            <select name="parkSearchOptionsList" id="parkSearchOptions" class="form-select">
                <option></option>
             </select>
          </form>
 
-         <div id="cardContainer" class="d-flex flex-wrap justify-content-center gap-1">
-
-         </div>
+         <div id="cardContainer" class="d-flex flex-wrap justify-content-center gap-3"></div>
       </main>
 
       <script src="js/nationalParkData.js"></script>

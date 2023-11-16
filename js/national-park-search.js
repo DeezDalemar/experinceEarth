@@ -92,9 +92,9 @@ function createCard(parkName) {
    let card = document.createElement("div");
    card.className = "card w-25";
 
-   let cardTitle = document.createElement("h5");
+   let cardTitle = document.createElement("h6");
    cardTitle.innerText = parkName.LocationName;
-   cardTitle.className = "card-title";
+   cardTitle.className = "card-title ";
 
    let cardBody = document.createElement("div");
    cardBody.className = "card-body";
@@ -106,7 +106,13 @@ function createCard(parkName) {
 
    let parkPhone = document.createElement("p");
    parkPhone.innerText = "Phone: " + parkName.Phone;
-   parkPhone.className = "card-text";
+   parkPhone.className = "card-text ";
+
+   let cardHeader = document.createElement("div");
+   cardHeader.className = "card-header cardHeader"
+   
+   let cardFooter = document.createElement("div");
+   cardHeader.className = "card-footer"
 
    let parkFax = document.createElement("p");
    parkFax.innerText = "Fax: " + parkName.Fax;
@@ -116,9 +122,10 @@ function createCard(parkName) {
    parkLink.href = parkName.Visit;
    parkLink.target = "_blank";
    parkLink.textContent = "Learn More";
-   parkLink.className = "card-text";
+   parkLink.className = "btn btn-outline-dark";
 
-   cardBody.appendChild(cardTitle);
+   card.appendChild(cardHeader)
+   cardHeader.appendChild(cardTitle);
    cardBody.appendChild(cardText);
    card.appendChild(cardBody);
    cardContainer.appendChild(card);

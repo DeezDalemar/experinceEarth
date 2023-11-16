@@ -1,5 +1,5 @@
 header {
-   background-color: rgb(1, 47, 1);
+   background-color: rgb(36, 99, 36);
    height: 4rem;
 }
 
@@ -29,7 +29,39 @@ select{
   background-color: rgb(33, 32, 32);
 }
 
-.headerLink{
-  height:fit-content ;
-border-right: 1px solid;
+.headerLink{  
+display: inline-flex;
+padding: 18px 5px; 
+background-color: rgb(36, 99, 36);
+color: #fff; 
+text-decoration: none; 
+transition: background-color 0.3s ease; 
+
+}
+
+.headerLink:hover{
+  background: green;
+}
+
+.loginLink{
+  padding: 18px 5px; 
+background-color: rgb(1, 47, 1);
+color: #fff; 
+text-decoration: none; 
+transition: background-color 0.3s ease; 
+border-right: 1px solid black;
+border-left: 1px solid black;
+}
+
+.loginLink:hover{
+  background: green;
+}
+
+a{
+  color: rgb(17, 115, 148);
+  text-decoration: underline;
+}
+
+.cardHeader{
+  height: 5rem;
 }
