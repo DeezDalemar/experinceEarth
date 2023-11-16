@@ -109,10 +109,10 @@ function createCard(parkName) {
    parkPhone.className = "card-text ";
 
    let cardHeader = document.createElement("div");
-   cardHeader.className = "card-header cardHeader"
+   cardHeader.className = "card-header";
    
    let cardFooter = document.createElement("div");
-   cardHeader.className = "card-footer"
+   cardFooter.className = "card-footer"
 
    let parkFax = document.createElement("p");
    parkFax.innerText = "Fax: " + parkName.Fax;
