@@ -62,6 +62,8 @@ a{
   text-decoration: underline;
 }
 
-.cardHeader{
-  height: 5rem;
+
+.card-header{
+  background-color: gray;
+   min-height: 5rem;
 }
