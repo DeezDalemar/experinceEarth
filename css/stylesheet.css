@@ -64,6 +64,7 @@ a{
 
 
 .card-header{
-  background-color: gray;
+  background-color: rgb(223, 216, 216);
    min-height: 5rem;
+   
 }

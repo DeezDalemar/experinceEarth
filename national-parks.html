@@ -23,24 +23,26 @@
          <a class="me-3 float-end loginLink" href="index.html">Sign In</a>
       </header>
       <main>
-         <form>
-            <h5>How would you like to sort the park lists?</h5>
+         <div class="container text-center mt-5">
+         <form class="form-check-inline">
+            <h3>How would you like to sort the park lists?</h3>
 
-            <input type="radio" name="searchType" id="searchByLocation"/>
-            <label for="searchByLocation">By Location</label>
+            <input type="radio" name="searchType" id="searchByLocation" class="form-check-input"/>
+            <label for="searchByLocation" class="form-check-label">By Location</label>
             
-            <input type="radio" name="searchType" id="searchByType" />
-            <label for="searchByType">By Type</label>
+            <input type="radio" name="searchType" id="searchByType" class="form-check-input" />
+            <label for="searchByType" class="form-check-label">By Type</label>
             
-            <input type="radio" name="searchType" id="showAll" />
-            <label for="searchByType">Show All</label>
+            <input type="radio" name="searchType" id="showAll" class="form-check-input"/>
+            <label for="searchByType" class="form-check-label">Show All</label>
          </form>
 
          <form>
-            <select name="parkSearchOptionsList" id="parkSearchOptions" class="form-select">
+            <select name="parkSearchOptionsList" id="parkSearchOptions" class="form-select text-center w-50">
                <option></option>
             </select>
          </form>
+         </div>
 
          <div id="cardContainer" class="d-flex flex-wrap justify-content-center gap-3"></div>
       </main>
