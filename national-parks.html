@@ -16,36 +16,63 @@
    </head>
    <body>
       <header class="border-bottom border-2 border-black">
-         <a href="index.html" class="headerLink">Experience Earth</a>
-         <a href="national-parks.html" class="headerLink">Park Search</a>
-         <a href="mountains.html" class="headerLink">Mountain Info</a>
+         <div class="container headerStyle">
+            <img src="imgs/8-Ec1wLHjJzocPe2K-removebg-preview.png" alt="" class="headerImg" />
 
-         <a class="me-3 float-end loginLink" href="index.html">Sign In</a>
+            <a href="index.html" class="headerLink">Experience Earth</a>
+            <a href="national-parks.html" class="headerLink">Park Search</a>
+            <a href="mountains.html" class="headerLink">Mountain Info</a>
+         </div>
       </header>
       <main>
-         <div class="container text-center mt-5">
-         <form class="form-check-inline">
-            <h3>How would you like to sort the park lists?</h3>
+         <div class="container text-center mt-5 mb-5">
+            <form class="form-check-inline">
+               <h3>How would you like to sort the park lists?</h3>
 
-            <input type="radio" name="searchType" id="searchByLocation" class="form-check-input"/>
-            <label for="searchByLocation" class="form-check-label">By Location</label>
-            
-            <input type="radio" name="searchType" id="searchByType" class="form-check-input" />
-            <label for="searchByType" class="form-check-label">By Type</label>
-            
-            <input type="radio" name="searchType" id="showAll" class="form-check-input"/>
-            <label for="searchByType" class="form-check-label">Show All</label>
-         </form>
+               <input type="radio" name="searchType" id="searchByLocation" class="form-check-input" />
+               <label for="searchByLocation" class="form-check-label">By Location</label>
 
-         <form>
-            <select name="parkSearchOptionsList" id="parkSearchOptions" class="form-select text-center w-50">
-               <option></option>
-            </select>
-         </form>
+               <input type="radio" name="searchType" id="searchByType" class="form-check-input" />
+               <label for="searchByType" class="form-check-label">By Type</label>
+
+               <input type="radio" name="searchType" id="showAll" class="form-check-input" />
+               <label for="searchByType" class="form-check-label">Show All</label>
+            </form>
+
+            <form class="w-50 container text-center mt-1">
+               <select name="parkSearchOptionsList" id="parkSearchOptions" class="form-select text-center">
+                  <option></option>
+               </select>
+            </form>
          </div>
 
          <div id="cardContainer" class="d-flex flex-wrap justify-content-center gap-3"></div>
       </main>
+
+      <footer>
+         <hr />
+         <div class="container">
+            <div class="footer-content">
+               <div class="footer-logo">
+                  <img src="imgs/8-Ec1wLHjJzocPe2K-removebg-preview.png" alt="" class="headerImg" />
+               </div>
+               <div class="footer-info">
+                  <h4>Dale Corp</h4>
+                  <p>123 Main Street, Cityville</p>
+                  <p>Email: info@dalecorp.com</p>
+                  <p>Phone: (123) 456-7890</p>
+               </div>
+               <div class="footer-info">
+                  <h4>Experience Earth</h4>
+                  <p>Visit us at: www.experienceearth.com</p>
+                  <p>Follow us on social media</p>
+                  <!-- Add social media icons or links here if needed -->
+               </div>
+            </div>
+            <hr />
+            <p class="copyright">© 2023 Dale Corp. All rights reserved.</p>
+         </div>
+      </footer>
 
       <script src="js/nationalParkData.js"></script>
       <script src="js/locationData.js"></script>

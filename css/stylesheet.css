@@ -45,12 +45,10 @@ transition: background-color 0.3s ease;
 
 .loginLink{
   padding: 18px 5px; 
-background-color: rgb(1, 47, 1);
+background-color: rgb(36, 99, 36);
 color: #fff; 
 text-decoration: none; 
 transition: background-color 0.3s ease; 
-border-right: 1px solid black;
-border-left: 1px solid black;
 }
 
 .loginLink:hover{
@@ -67,4 +65,29 @@ a{
   background-color: rgb(223, 216, 216);
    min-height: 5rem;
    
+}
+
+.headerStyle{
+  margin-left: 2rem;
+}
+
+.headerImg{
+  width:  4rem;
+  height: 4rem;
+}
+
+footer {
+    background-color: #333; /* Choose a background color */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Padding for content inside the footer */
+    text-align: center; /* Center the content */
+}
+
+.headerImg {
+    width: 50px; /* Adjust the image width as needed */
+    margin-right: 20px; /* Add some spacing between the image and text */
+}
+
+h4 {
+    margin: 0; /* Remove default margin on heading elements */
 }
